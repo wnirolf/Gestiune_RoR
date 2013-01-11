@@ -1,7 +1,14 @@
 <% provide(:title, 'Home') %>
-<h1>Gestiune RoR</h1>
-<p>
-  Aceasta este pagina home a proiectului - 
+<div class="center hero-unit">
+  <h1>Gestiune RoR</h1>
+
+  <h2>
+    Aceasta este pagina home a proiectului - 
   <a href="http://railstutorial.org/">Aplicatie de gestiune</a>
    - Ruby on Rails.
-</p>
+  </h2>
+
+  <%= link_to "Inregistrare !", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
